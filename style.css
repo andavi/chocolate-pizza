@@ -109,7 +109,13 @@ aside ul {
 }
 
 aside ul:first-child {
-  margin-right:200px;
+  margin-right:100px;
+  position: relative;
+  bottom: 35px;
+}
+
+aside ul:last-child>li:last-child {
+  margin-left: 30px;
 }
 
 aside li {
@@ -138,6 +144,11 @@ main>section>* {
   display: inline-block;
 }
 
+/* Vanessa info container */
+main>section>div:first-child {
+  width: 75%;
+}
+
 main>section h2 {
   font-family: 'Noto Serif', serif;
   font-weight: bold;
@@ -153,9 +164,13 @@ main>section p {
   margin-right: 50px;
 }
 
-main>section button {
+/* button container */
+main>section>div:last-child {
   float: right;
-  width: 20%;
+}
+
+main>section button {
+  width: 200px;
   height: 60px;
   background-color: rgb(212, 80, 80);
   color: #eee;
